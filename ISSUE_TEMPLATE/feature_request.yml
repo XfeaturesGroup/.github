@@ -1,0 +1,39 @@
+name: Feature request
+description: Propose a focused improvement to a maintained project.
+title: "[Feature]: "
+labels: ["enhancement", "triage"]
+body:
+  - type: input
+    id: project
+    attributes:
+      label: Project or service
+      placeholder: XfeaturesAccount
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem to solve
+      description: Describe the user or operational need, not only a preferred implementation.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed outcome
+      description: Explain what success would look like and who benefits.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+    validations:
+      required: false
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Add mockups, examples, compatibility or security considerations.
+    validations:
+      required: false

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 54" role="img" aria-labelledby="title">
+  <title id="title">Founder kingnoype</title>
+  <rect x="0.5" y="0.5" width="249" height="53" fill="#0d1117" stroke="#30363d"/>
+  <rect x="0" y="0" width="5" height="54" fill="#f47920"/>
+  <text x="22" y="22" fill="#8b949e" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="700" letter-spacing="1.8">FOUNDER</text>
+  <text x="22" y="39" fill="#f0f6fc" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" letter-spacing="1">KINGNOYPE</text>
+  <text x="226" y="34" text-anchor="end" fill="#f47920" font-family="Arial, Helvetica, sans-serif" font-size="18">↗</text>
+</svg>

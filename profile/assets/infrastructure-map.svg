@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 360" role="img" aria-labelledby="title desc">
+  <title id="title">XfeaturesGroup</title>
+  <desc id="desc">A restrained editorial banner for XfeaturesGroup.</desc>
+  <rect width="1440" height="360" fill="#0d1117"/>
+  <rect x="48" y="48" width="1344" height="264" fill="none" stroke="#30363d"/>
+  <rect x="48" y="48" width="12" height="264" fill="#f47920"/>
+  <path d="M96 228 H1344" stroke="#30363d"/>
+  <path d="M96 112 H180" stroke="#f47920" stroke-width="4"/>
+  <g fill="#8b949e" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700" letter-spacing="2">
+    <text x="96" y="92">XFEATURES / GROUP</text>
+    <text x="1344" y="92" text-anchor="end">INDEPENDENT TECH HOLDING</text>
+    <text x="96" y="278">INFRASTRUCTURE</text>
+    <text x="362" y="278">SOFTWARE</text>
+    <text x="552" y="278">RESEARCH</text>
+    <text x="1344" y="278" text-anchor="end">RIGA / LV</text>
+  </g>
+  <text x="96" y="190" fill="#f0f6fc" font-family="Georgia, 'Times New Roman', serif" font-size="72" font-weight="700" letter-spacing="-2">XfeaturesGroup</text>
+</svg>

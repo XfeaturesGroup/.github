@@ -1,0 +1,65 @@
+name: Bug report
+description: Report a reproducible problem in a maintained project.
+title: "[Bug]: "
+labels: ["bug", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for helping improve the project. Do not include secrets,
+        personal data or vulnerability details here. Security issues belong in
+        the private process described in SECURITY.md.
+  - type: input
+    id: project
+    attributes:
+      label: Project or service
+      description: Name the affected repository, package, endpoint or service.
+      placeholder: XfeaturesAccount / xfeatures-hq-web
+    validations:
+      required: true
+  - type: textarea
+    id: summary
+    attributes:
+      label: What happened?
+      description: State the observed behaviour and its user impact.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. ...
+        2. ...
+        3. ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behaviour
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Include non-sensitive version, browser, OS and deployment details.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Logs, screenshots or additional context
+      description: Redact tokens, session identifiers and personal data.
+    validations:
+      required: false
+  - type: checkboxes
+    id: confirmations
+    attributes:
+      label: Checklist
+      options:
+        - label: I searched existing issues.
+          required: true
+        - label: This report contains no security-sensitive details or secrets.
+          required: true
