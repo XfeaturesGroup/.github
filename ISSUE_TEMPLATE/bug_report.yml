@@ -1,0 +1,88 @@
+name: 🚨 Incident Report (Anomaly / Bug)
+description: File a formal report regarding infrastructure, API, or service failures.
+title: "[ANOMALY]: <Short description of the issue>"
+labels: ["bug", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ### 🛑 STOP: Security Protocol Check
+        **If this is a security vulnerability, DO NOT submit this form.** Exposing vulnerabilities publicly is a violation of our ecosystem rules. Please refer to our [SECURITY.md](https://github.com/XfeaturesGroup/.github/blob/main/SECURITY.md) and email **security@xfeatures.net** immediately to trigger the triage protocol.
+        
+        If this is a standard system bug or anomaly, proceed below.
+
+  - type: dropdown
+    id: subsystem
+    attributes:
+      label: 🎯 Affected Sector
+      description: Which part of the XfeaturesGroup ecosystem is experiencing the anomaly?
+      options:
+        - Xfeatures Hosting (Infrastructure/Hardware)
+        - XfeaturesGUARD (WAF/Routing)
+        - XfeaturesAPI (Any)
+        - XfeaturesAI (Models/API/XF-IMG4)
+        - Vorticity / Internal API
+        - XCOXY Alliance Integration
+        - Other
+    validations:
+      required: true
+
+  - type: dropdown
+    id: severity
+    attributes:
+      label: ⚠️ Severity Level
+      description: Assess the impact of this incident on operations.
+      options:
+        - "Low: Minor visual or non-critical operational glitch."
+        - "Elevated: Core feature is broken, but a workaround exists."
+        - "Critical: Total system failure, API down, or SLA breach."
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: 📋 Anomaly Description
+      description: Provide a clear, precise explanation of the failure. Avoid assumptions; state the facts.
+      placeholder: "The XfeaturesAI endpoint returns a 502 Bad Gateway when processing batch requests over 50MB..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: 🔄 Reproduction Protocol
+      description: Outline the exact steps our engineers must take to trigger the anomaly.
+      placeholder: |
+        1. Initialize request to endpoint /api/v2/generate
+        2. Pass payload 'X' with headers 'Y'
+        3. Observe the failure...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: 📊 Expected Telemetry / Behavior
+      description: What should have happened if the system was operating nominally?
+    validations:
+      required: true
+
+  - type: textarea
+    id: evidence
+    attributes:
+      label: 📎 Telemetry Data & Evidence
+      description: Attach relevant system logs, XfeaturesGUARD error IDs, or screenshots. (Drag and drop works here).
+      placeholder: Paste your logs or upload files here. Do not include sensitive API keys.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: ⚖️ Acknowledgment
+      options:
+        - label: I confirm that this report does not contain sensitive security vulnerabilities or private API keys.
+          required: true
+        - label: I understand that the interests of XfeaturesGroup remain paramount, and reports will be prioritized accordingly.
+          required: true
